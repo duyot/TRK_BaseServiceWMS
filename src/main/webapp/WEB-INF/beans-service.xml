@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://cxf.apache.org/jaxws
+        http://cxf.apache.org/schemas/jaxws.xsd">
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
+    <!--Danh muc kho-->
+    <jaxws:endpoint id="stockService"
+                    implementor="com.viettel.logistic.wms.service.StockServiceImpl"
+                    address="/stockService">
+    </jaxws:endpoint>
+    <!--Danh muc Cells-->
+    <jaxws:endpoint id="cellsService"
+                    implementor="com.viettel.logistic.wms.service.CellsServiceImpl"
+                    address="/cellsService">
+    </jaxws:endpoint>
+    <!--Danh muc gia, ke chua hang hoa-->
+    <jaxws:endpoint id="zoneShelfService"
+                    implementor="com.viettel.logistic.wms.service.ZoneShelfServiceImpl"
+                    address="/zoneShelfService">
+    </jaxws:endpoint>
+    <!--Danh muc vung luu tru hang hoa-->
+    <jaxws:endpoint id="zonesService"
+                    implementor="com.viettel.logistic.wms.service.ZonesServiceImpl"
+                    address="/zonesService">
+    </jaxws:endpoint>
+    <!--Danh muc vung khai thac kho hang-->
+    <jaxws:endpoint id="exploitationAreaService"
+                    implementor="com.viettel.logistic.wms.service.ExploitationAreaServiceImpl"
+                    address="/exploitationAreaService">
+    </jaxws:endpoint>
+    <!--Vung khai thac hang con trong -->
+    <jaxws:endpoint id="exploitationAreaFreeService"
+                    implementor="com.viettel.logistic.wms.service.ExploitationAreaFreeServiceImpl"
+                    address="/exploitationAreaFreeService">
+    </jaxws:endpoint>
+    <!--Thong tin chi tiet hang hoa-->
+    <jaxws:endpoint id="goodsAddInforService"
+                    implementor="com.viettel.logistic.wms.service.GoodsAddInforServiceImpl"
+                    address="/goodsAddInforService">
+    </jaxws:endpoint>
+    <!--Dong goi hang hoa-->
+    <jaxws:endpoint id="goodsPackingService"
+                    implementor="com.viettel.logistic.wms.service.GoodsPackingServiceImpl"
+                    address="/goodsPackingService">
+    </jaxws:endpoint>
+    <!--Danh muc goi hang-->
+    <jaxws:endpoint id="goodsSetService"
+                    implementor="com.viettel.logistic.wms.service.GoodsSetServiceImpl"
+                    address="/goodsSetService">
+    </jaxws:endpoint>
+    <!--Danh san pham -->
+    <jaxws:endpoint id="posProductService"
+                    implementor="com.viettel.logistic.wms.service.PosProductServiceImpl"
+                    address="/posProductService">
+    </jaxws:endpoint>
+    <!--Danh muc ly do-->
+    <jaxws:endpoint id="reasonService"
+                    implementor="com.viettel.logistic.wms.service.ReasonServiceImpl"
+                    address="/reasonService">
+    </jaxws:endpoint>
+    <!--Du lieu kho hang theo so luong-->
+    <jaxws:endpoint id="stockGoodsService"
+                    implementor="com.viettel.logistic.wms.service.StockGoodsServiceImpl"
+                    address="/stockGoodsService">
+    </jaxws:endpoint>
+    <!--Du lieu kho hang theo tong so luong-->
+    <jaxws:endpoint id="stockGoodsTotalService"
+                    implementor="com.viettel.logistic.wms.service.StockGoodsTotalServiceImpl"
+                    address="/stockGoodsTotalService">
+    </jaxws:endpoint>
+    <!--Du lieu kho hang theo chi tiet serial-->
+    <jaxws:endpoint id="stockGoodsSerialService"
+                    implementor="com.viettel.logistic.wms.service.StockGoodsSerialServiceImpl"
+                    address="/stockGoodsSerialService">
+    </jaxws:endpoint>
+    <!--Du lieu kho hang theo dai serial-->
+    <jaxws:endpoint id="stockGoodsSerialStripService"
+                    implementor="com.viettel.logistic.wms.service.StockGoodsSerialStripServiceImpl"
+                    address="/stockGoodsSerialStripService">
+    </jaxws:endpoint>
+    <!--Du lieu serial import loi-->
+    <jaxws:endpoint id="stockGoodsSerialErrorService"
+                    implementor="com.viettel.logistic.wms.service.StockGoodsSerialErrorServiceImpl"
+                    address="/stockGoodsSerialErrorService">
+    </jaxws:endpoint>
+    <!--Giao dich kho-->
+    <jaxws:endpoint id="stockTransService"
+                    implementor="com.viettel.logistic.wms.service.StockTransServiceImpl"
+                    address="/stockTransService">
+    </jaxws:endpoint>
+    <!--Chi tiet Giao dich kho-->
+    <jaxws:endpoint id="stockTransDetailService"
+                    implementor="com.viettel.logistic.wms.service.StockTransDetailServiceImpl"
+                    address="/stockTransDetailService">
+    </jaxws:endpoint>
+    <!--Chi tiet Giao dich serial-->
+    <jaxws:endpoint id="stockTransSerialService"
+                    implementor="com.viettel.logistic.wms.service.StockTransSerialServiceImpl"
+                    address="/stockTransSerialService">
+    </jaxws:endpoint>
+    <!--Danh muc hang hoa-->
+    <jaxws:endpoint id="goodsService"
+                    implementor="com.viettel.logistic.wms.service.GoodsServiceImpl"
+                    address="/goodsService">
+    </jaxws:endpoint>
+    <!--Quan ly nhap kho-->    
+    <jaxws:endpoint id="stockImportService"
+                    implementor="com.viettel.logistic.wms.service.StockImportServiceImpl"
+                    address="/stockImportService">
+    </jaxws:endpoint> 
+    <!--Quan ly xuat kho-->    
+    <jaxws:endpoint id="stockExportService"
+                    implementor="com.viettel.logistic.wms.service.StockExportServiceImpl"
+                    address="/stockExportService">
+    </jaxws:endpoint> 
+    <!--Phieu nhat hang-->    
+    <jaxws:endpoint id="pickingListService"
+                    implementor="com.viettel.logistic.wms.service.PickingListServiceImpl"
+                    address="/pickingListService">
+    </jaxws:endpoint>
+    <!--Mat hang theo Phieu nhat hang-->    
+    <jaxws:endpoint id="pickingListGoodsService"
+                    implementor="com.viettel.logistic.wms.service.PickingListGoodsServiceImpl"
+                    address="/pickingListGoodsService">
+    </jaxws:endpoint>
+    <!--hang hoa kiem ke-->
+    <jaxws:endpoint id="inventoryActionGoodsService"
+                    implementor="com.viettel.logistic.wms.service.InventoryActionGoodsServiceImpl"
+                    address="/inventoryActionGoodsService">
+    </jaxws:endpoint>
+    <!--lenh kiem ke-->
+    <jaxws:endpoint id="inventoryActionService"
+                    implementor="com.viettel.logistic.wms.service.InventoryActionServiceImpl"
+                    address="/inventoryActionService">
+    </jaxws:endpoint>
+    <!--Ket qua kiem ke-->
+    <jaxws:endpoint id="inventoryResultService"
+                    implementor="com.viettel.logistic.wms.service.InventoryResultServiceImpl"
+                    address="/inventoryResultService">
+    </jaxws:endpoint>
+    <!--Lich su thay doi vi tri-->    
+    <jaxws:endpoint id="changePositionService"
+                    implementor="com.viettel.logistic.wms.service.ChangePositionServiceImpl"
+                    address="/changePositionService">
+    </jaxws:endpoint>
+    <!--    <jaxws:endpoint id="mapStockService"
+                    implementor="com.viettel.logistic.wms.service.MapStockServiceImpl"
+                    address="/mapStockService">
+    </jaxws:endpoint>-->
+    <!--Phieu de nghi nhan hang-->    
+    <jaxws:endpoint id="proposedReceiptService"
+                    implementor="com.viettel.logistic.wms.service.ProposedReceiptServiceImpl"
+                    address="/proposedReceiptService">
+    </jaxws:endpoint>
+    <!--Hang hoa de nghi nhan-->    
+    <jaxws:endpoint id="goodsHandoverService"
+                    implementor="com.viettel.logistic.wms.service.GoodsHandoverServiceImpl"
+                    address="/goodsHandoverService">
+    </jaxws:endpoint>    
+    <!--Serial hang hoa de nghi nhan-->    
+    <jaxws:endpoint id="goodsHandoverSerialService"
+                    implementor="com.viettel.logistic.wms.service.GoodsHandoverSerialServiceImpl"
+                    address="/goodsHandoverSerialService">
+    </jaxws:endpoint>
+    <!--Lich su bien dong hang hoa de nghi nhap-->    
+    <jaxws:endpoint id="historyFluctuationsService"
+                    implementor="com.viettel.logistic.wms.service.HistoryFluctuationsServiceImpl"
+                    address="/historyFluctuationsService">
+    </jaxws:endpoint>
+    <!--map nhan vien - hang hoa-->
+    <jaxws:endpoint id="mapStaffGoodsService"
+                    implementor="com.viettel.logistic.wms.service.MapStaffGoodsServiceImpl"
+                    address="/mapStaffGoodsService">
+    </jaxws:endpoint>
+    <jaxws:endpoint id="historyChangeGoodsService"
+                    implementor="com.viettel.logistic.wms.service.HistoryChangeGoodsServiceImpl"
+                    address="/historyChangeGoodsService">
+    </jaxws:endpoint>
+    <!--do kpi-->
+    <jaxws:endpoint id="kpiLogService"
+                    implementor="com.viettel.logistic.wms.service.KpiLogServiceImpl"
+                    address="/kpiLogService">
+    </jaxws:endpoint>
+    <jaxws:endpoint id="messagesService"
+                    implementor="com.viettel.logistic.wms.service.MessagesServiceImpl"
+                    address="/messagesService">
+    </jaxws:endpoint>
+    <jaxws:endpoint id="SerialInventoryService"
+                    implementor="com.viettel.logistic.wms.service.SerialInventoryServiceImpl"
+                    address="/serialInventoryService">
+    </jaxws:endpoint>
+</beans>

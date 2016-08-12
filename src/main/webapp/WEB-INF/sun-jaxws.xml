@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="com.viettel.logistic.wms.service.ExploitationAreaFreeServiceImpl" name="ExploitationAreaFreeServiceImplService" url-pattern="/ExploitationAreaFreeServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.PosProductServiceImpl" name="PosProductServiceImplService" url-pattern="/PosProductServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.ReasonServiceImpl" name="ReasonServiceImplService" url-pattern="/ReasonServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.GoodsSetServiceImpl" name="GoodsSetServiceImplService" url-pattern="/GoodsSetServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.ProposedReceiptServiceImpl" name="ProposedReceiptServiceImplService" url-pattern="/ProposedReceiptServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.GoodsHandoverSerialServiceImpl" name="GoodsHandoverSerialServiceImplService" url-pattern="/GoodsHandoverSerialServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.ExploitationAreaServiceImpl" name="ExploitationAreaServiceImplService" url-pattern="/ExploitationAreaServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockTransDetailServiceImpl" name="StockTransDetailServiceImplService" url-pattern="/StockTransDetailServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.InventoryActionServiceImpl" name="InventoryActionServiceImplService" url-pattern="/InventoryActionServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.ZonesServiceImpl" name="ZonesServiceImplService" url-pattern="/ZonesServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockGoodsServiceImpl" name="StockGoodsServiceImplService" url-pattern="/StockGoodsServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.ZoneShelfServiceImpl" name="ZoneShelfServiceImplService" url-pattern="/ZoneShelfServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockServiceImpl" name="StockServiceImplService" url-pattern="/StockServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.GoodsAddInforServiceImpl" name="GoodsAddInforServiceImplService" url-pattern="/GoodsAddInforServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockGoodsSerialErrorServiceImpl" name="StockGoodsSerialErrorServiceImplService" url-pattern="/StockGoodsSerialErrorServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.InventoryActionGoodsServiceImpl" name="InventoryActionGoodsServiceImplService" url-pattern="/InventoryActionGoodsServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockGoodsSerialServiceImpl" name="StockGoodsSerialServiceImplService" url-pattern="/StockGoodsSerialServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockGoodsSerialStripServiceImpl" name="StockGoodsSerialStripServiceImplService" url-pattern="/StockGoodsSerialStripServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.PickingListGoodsServiceImpl" name="PickingListGoodsServiceImplService" url-pattern="/PickingListGoodsServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.GoodsHandoverServiceImpl" name="GoodsHandoverServiceImplService" url-pattern="/GoodsHandoverServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.GoodsServiceImpl" name="GoodsServiceImplService" url-pattern="/GoodsServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.HistoryFluctuationsServiceImpl" name="HistoryFluctuationsServiceImplService" url-pattern="/HistoryFluctuationsServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockTransServiceImpl" name="StockTransServiceImplService" url-pattern="/StockTransServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.InventoryResultServiceImpl" name="InventoryResultServiceImplService" url-pattern="/InventoryResultServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockTransSerialServiceImpl" name="StockTransSerialServiceImplService" url-pattern="/StockTransSerialServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.GoodsPackingServiceImpl" name="GoodsPackingServiceImplService" url-pattern="/GoodsPackingServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.CellsServiceImpl" name="CellsServiceImplService" url-pattern="/CellsServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.PickingListServiceImpl" name="PickingListServiceImplService" url-pattern="/PickingListServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.MapStaffGoodsServiceImpl" name="MapStaffGoodsServiceImplService" url-pattern="/MapStaffGoodsServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockImportServiceImpl" name="StockImportServiceImplService" url-pattern="/StockImportServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.ChangePositionServiceImpl" name="ChangePositionServiceImplService" url-pattern="/ChangePositionServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.KpiLogServiceImpl" name="KpiLogServiceImplService" url-pattern="/KpiLogServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.HistoryChangeGoodsServiceImpl" name="HistoryChangeGoodsServiceImplService" url-pattern="/HistoryChangeGoodsServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockGoodsTotalServiceImpl" name="StockGoodsTotalServiceImplService" url-pattern="/StockGoodsTotalServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.MessagesServiceImpl" name="MessagesServiceImplService" url-pattern="/MessagesServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.SerialInventoryServiceImpl" name="SerialInventoryServiceImplService" url-pattern="/SerialInventoryServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.StockExportServiceImpl" name="StockExportServiceImplService" url-pattern="/StockExportServiceImplService"/>
+  <endpoint implementation="com.viettel.logistic.wms.service.NoSerialInventoryServiceImpl" name="NoSerialInventoryServiceImplService" url-pattern="/NoSerialInventoryServiceImplService"/>
+</endpoints>
