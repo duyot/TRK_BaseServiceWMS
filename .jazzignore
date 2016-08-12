@@ -30,4 +30,5 @@ core.ignore= \
 	{.classpath} \
 	{.project} \
 	{project} \
-	{target} 
+	{target} \
+	
